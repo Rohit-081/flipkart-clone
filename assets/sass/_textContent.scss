@@ -1,0 +1,30 @@
+.text-content {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 978px;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+.text-content-inner-child {
+    padding: 20px 25px;
+    color: #878787;
+    background-color: #fff;
+}
+
+.text-content-inner-inner-child {
+    clear: both;
+    line-height: 16px;
+    font-size: 11px;
+    margin: 30px 0 15px;
+}
+
+.text-content-inner-inner-child h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.text-content-inner-inner-child h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
