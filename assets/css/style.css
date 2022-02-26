@@ -33,6 +33,10 @@ h6 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  width: 100%;
+  height: 56px;
+  position: fixed;
+  z-index: 1;
 }
 
 .header-left {
@@ -45,9 +49,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 5;
-      -ms-flex-positive: 5;
-          flex-grow: 5;
+  -webkit-box-flex: 6;
+      -ms-flex-positive: 6;
+          flex-grow: 6;
   gap: 10px;
 }
 
@@ -77,6 +81,10 @@ h6 {
   text-decoration: none;
   border: none;
   outline: none;
+}
+
+.explore:hover {
+  text-decoration: underline;
 }
 
 .explore-yellow {
@@ -112,13 +120,72 @@ input {
   padding: 4px 12px 0 8px;
 }
 
+.search-btn:hover {
+  cursor: pointer;
+}
+
+.list-search {
+  display: none;
+  position: absolute;
+  border-radius: 0 0 2px 2px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #fff;
+  color: #000;
+  z-index: 9;
+  -webkit-box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 554.5px;
+  margin-top: -1px;
+  padding-left: 10px;
+}
+
+.list-search li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.list-search li .search-list-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.list-search li a {
+  text-decoration: none;
+}
+
+.list-search li .p1 {
+  color: #757575;
+  font-weight: 400;
+}
+
+.list-search li .p2 {
+  font-size: 12px;
+  padding-top: 4px;
+  color: #2874f0;
+  font-weight: 500;
+}
+
+.hide {
+  display: none;
+}
+
 .header-right {
   -webkit-box-flex: 4;
       -ms-flex-positive: 4;
           flex-grow: 4;
 }
 
-ul {
+.header-right ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +195,7 @@ ul {
   list-style-type: none;
 }
 
-ul li a {
+.header-right ul li a {
   color: #fff;
   font-size: 16px;
   letter-spacing: 0.1px;
@@ -143,6 +210,8 @@ ul li a {
   min-height: 112px;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+  padding-top: 60px;
+  position: relative;
 }
 
 .image-sort-flex {
