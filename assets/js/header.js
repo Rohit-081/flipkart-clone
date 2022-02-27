@@ -121,6 +121,15 @@ listSearch.innerHTML = `
                                 <p class="p1">t shirts</p>
                             </div>
                         </div>
+                    </a><a href="#"> 
+                        <div class="search-list-icon"> 
+                            <div>
+                                <img style="height: 32px; width: 32px;" src="https://rukminim1.flixcart.com/image/100/100/khmbafk0-0/t-shirt/w/j/s/xs-t322-blwh-seven-rocks-original-imafxhagtyj2xvpn.jpeg?q=90"> 
+                            </div>
+                            <div> 
+                                <p class="p1">t shirts</p>
+                            </div>
+                        </div>
                     </a>
                 </li>
                         `;
